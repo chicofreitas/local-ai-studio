@@ -17,8 +17,8 @@ class BriefAgent implements Agent, Conversational, HasTools
 
     /**
      * Get the instructions that the agent should follow.
-     * 
-     * It uses Heredoc
+     *
+     * It uses Heredoc.
      */
     public function instructions(): Stringable|string
     {
