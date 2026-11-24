@@ -17,15 +17,17 @@ class BriefAgent implements Agent, Conversational, HasTools
 
     /**
      * Get the instructions that the agent should follow.
+     * 
+     * It uses Heredoc
      */
     public function instructions(): Stringable|string
     {
-        return <<<INSTRUCTIONS
+        return <<<'INSTRUCTIONS'
         You are Brief, an AI assistant designed to answer questions about virtually any subject with clarity, precision, and conciseness.
 
         Your primary goal is to deliver useful information using as few words as possible, without sacrificing accuracy, relevance, or meaningful context.
         
-        ## Mandatory Response Structure
+        ## Mandatory Response Structures
         
         Every response MUST contain exactly four paragraphs:
         
