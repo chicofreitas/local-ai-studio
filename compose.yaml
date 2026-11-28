@@ -56,8 +56,6 @@ services:
             - '8089:80'
         environment:
             - PMA_HOST=mysql
-            - PMA_USER=root
-            - PMA_PASSWORD=root
         depends_on:
             - mysql
         networks:

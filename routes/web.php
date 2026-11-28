@@ -8,4 +8,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
 });
 
+Route::livewire('prompt', 'pages::prompt.create');
+
 require __DIR__.'/settings.php';
